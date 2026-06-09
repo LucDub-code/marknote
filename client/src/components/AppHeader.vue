@@ -1,10 +1,13 @@
 <script setup lang="ts">
-  import MenuButton from './header/MenuButton.vue'
+  import SidebarToggle from './header/SidebarToggle.vue'
 </script>
 
 <template>
   <header>
-    <MenuButton />
+    <SidebarToggle />
+    <div class="header__right">
+
+    </div>
   </header>
 </template>
 
@@ -16,5 +19,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    &__right {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 24px
+    }
   }
 </style>

@@ -1,12 +1,8 @@
 <script setup lang="ts">
   import '@/assets/hamburgers.scss'
-  import { ref } from 'vue'
+  import { useSidebarStore } from '@/stores/sidebar'
 
-  const isOpen = ref(false)
-
-  const toggleMenu = () => {
-  isOpen.value = !isOpen.value
-}
+  const sidebar = useSidebarStore()
 </script>
 
 <template>
@@ -14,8 +10,8 @@
     <button 
       class="hamburger hamburger--squeeze" 
       type="button" 
-      @click="toggleMenu" 
-      :class="{ 'is-active': isOpen }"
+      @click="sidebar.toggle" 
+      :class="{ 'is-active': sidebar.isOpen }"
     >
       <span class="hamburger-box">
         <span class="hamburger-inner"></span>
