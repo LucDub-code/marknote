@@ -32,7 +32,11 @@
     }
 
     &__name {
-      color: var(--neutral-0)
+      color: var(--neutral-0);
+      cursor: pointer;
+      &:hover {
+        color: var(--orange-600);
+      }
     }
   }
 </style>

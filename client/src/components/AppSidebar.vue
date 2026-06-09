@@ -2,6 +2,7 @@
   import { useSidebarStore } from '@/stores/sidebar'
   import NewDocumentButton from './sidebar/NewDocumentButton.vue';
   import DocumentList from './sidebar/DocumentList.vue';
+  import ThemeToggle from './sidebar/ThemeToggle.vue';
 
   const sidebar = useSidebarStore()
 </script>
@@ -14,6 +15,7 @@
         <NewDocumentButton />
         <DocumentList />
       </div>
+      <ThemeToggle />
     </div>
   </div>
 </template>
