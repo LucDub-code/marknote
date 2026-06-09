@@ -1,8 +1,11 @@
 <script setup lang="ts">
+  import { useSidebarStore } from '@/stores/sidebar'
   import SidebarToggle from './header/SidebarToggle.vue'
   import DocumentTitle from './header/DocumentTitle.vue'
   import DeleteButton from './header/DeleteButton.vue'
   import SaveButton from './header/SaveButton.vue'
+
+  const sidebar = useSidebarStore()
 </script>
 
 <template>
@@ -16,7 +19,7 @@
         </div>
         <DocumentTitle />
       </div>
-      <div class="container__right">
+      <div class="container__right" v-if="!sidebar.isOpen">
         <DeleteButton />
         <SaveButton />
       </div>
