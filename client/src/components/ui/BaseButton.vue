@@ -12,10 +12,11 @@
     background: var(--orange-600);
     color: var(--neutral-0);
     border: none;
-    color: var(--slate-400);
+    color: var(--neutral-0);
     border-radius: 4px;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
 
     &:hover {

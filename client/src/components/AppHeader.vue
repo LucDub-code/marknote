@@ -55,7 +55,7 @@
           }
 
           &__name {
-            width: 168px;
+            width: 144px;
           }
         }
       }

@@ -11,7 +11,6 @@
 
 <style scoped lang="scss">
   .save-button {
-    color: var(--neutral-0);
     padding: 10px 16px;
   }
 </style>
