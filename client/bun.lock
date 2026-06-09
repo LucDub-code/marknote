@@ -5,6 +5,9 @@
     "": {
       "name": "client",
       "dependencies": {
+        "@fontsource/roboto": "^5.2.10",
+        "@fontsource/roboto-mono": "^5.2.9",
+        "@fontsource/roboto-slab": "^5.2.8",
         "pinia": "^3.0.4",
         "vue": "^3.5.32",
       },
@@ -108,6 +111,12 @@
     "@eslint/object-schema": ["@eslint/object-schema@3.0.5", "", {}, "sha512-vqTaUEgxzm+YDSdElad6PiRoX4t8VGDjCtt05zn4nU810UIx/uNEV7/lZJ6KwFThKZOzOxzXy48da+No7HZaMw=="],
 
     "@eslint/plugin-kit": ["@eslint/plugin-kit@0.7.2", "", { "dependencies": { "@eslint/core": "^1.2.1", "levn": "^0.4.1" } }, "sha512-+CNAzxglkrpNf/kKywqQfk74QjtceuOE7Qm+AF8miRvPF/wmmK5+OJOgVh3AVTT3RP2mH3+FOaxlE5v72owk0A=="],
+
+    "@fontsource/roboto": ["@fontsource/roboto@5.2.10", "", {}, "sha512-8HlA5FtSfz//oFSr2eL7GFXAiE7eIkcGOtx7tjsLKq+as702x9+GU7K95iDeWFapHC4M2hv9RrpXKRTGGBI8Zg=="],
+
+    "@fontsource/roboto-mono": ["@fontsource/roboto-mono@5.2.9", "", {}, "sha512-iIeSyrRGoM15uIWqXslW1K9UFnUYfnCFNrNoWjXE0huO1L+hM0Jst0KNLuRc7P21xPpGL0bZouzYSX0Em9eyWg=="],
+
+    "@fontsource/roboto-slab": ["@fontsource/roboto-slab@5.2.8", "", {}, "sha512-8+iMCsoUZsDwQUe5omwCp7JPNTVdyAgay5AdhmnFZPEVIVabujrmYaFkSuZ1+GUemPEWlzEQ6aQkg2mPL84SAA=="],
 
     "@humanfs/core": ["@humanfs/core@0.19.2", "", { "dependencies": { "@humanfs/types": "^0.15.0" } }, "sha512-UhXNm+CFMWcbChXywFwkmhqjs3PRCmcSa/hfBgLIb7oQ5HNb1wS0icWsGtSAUNgefHeI+eBrA8I1fxmbHsGdvA=="],
 
