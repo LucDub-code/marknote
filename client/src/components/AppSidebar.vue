@@ -1,6 +1,7 @@
 <script setup lang="ts">
   import { useSidebarStore } from '@/stores/sidebar'
   import NewDocumentButton from './sidebar/NewDocumentButton.vue';
+  import DocumentList from './sidebar/DocumentList.vue';
 
   const sidebar = useSidebarStore()
 </script>
@@ -11,6 +12,7 @@
       <div class="sidebar__top">
         <h1 class="sidebar__title text-preset-6">Mes documents</h1>
         <NewDocumentButton />
+        <DocumentList />
       </div>
     </div>
   </div>
