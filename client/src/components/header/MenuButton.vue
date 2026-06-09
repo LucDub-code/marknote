@@ -1,8 +1,26 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+  import '@/assets/hamburgers.scss'
+  import { ref } from 'vue'
+
+  const isOpen = ref(false)
+
+  const toggleMenu = () => {
+  isOpen.value = !isOpen.value
+}
+</script>
 
 <template>
   <div class="menu-button">
-    <img src="../../assets/icons/open-menu.svg" alt="Menu" />
+    <button 
+      class="hamburger hamburger--squeeze" 
+      type="button" 
+      @click="toggleMenu" 
+      :class="{ 'is-active': isOpen }"
+    >
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
   </div>
 </template>
 

@@ -15,6 +15,6 @@
     height: 72px;
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
   }
 </style>
