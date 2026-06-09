@@ -12,12 +12,12 @@
 
 <style scoped lang="scss">
   .sidebar {
-    background-color: var(--slate-950);
+    background: var(--slate-950);
     width: 0;
     height: 100%;
     overflow: hidden;
     transition: width 0.2s ease;
-    
+
     &.is-open {
       width: 250px;
     }

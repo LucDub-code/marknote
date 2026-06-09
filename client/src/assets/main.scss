@@ -17,7 +17,7 @@ $slate-700: #35393F;
 $slate-500: #5A6069;
 $slate-400: #7C8187;
 $slate-300: #C1C4CB;
-$orange-600: #E60013;
+$orange-600: #E46643;
 $orange-400: #F39765;
 
 :root {
@@ -53,7 +53,7 @@ $orange-400: #F39765;
 }
 
 body {
-  background-color: var(--bg);
+  background: var(--bg);
   color: var(--text-markdown);
 }
 

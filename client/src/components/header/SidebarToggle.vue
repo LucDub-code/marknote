@@ -22,12 +22,15 @@
 
 <style scoped lang="scss">
   .menu-button {
-    background-color: var(--slate-700);
+    background: var(--slate-700);
     width: 72px;
     height: 100%;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
+    &:hover {
+      background: var(--orange-600);
+    }
   }
 </style>
