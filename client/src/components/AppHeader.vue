@@ -1,5 +1,6 @@
 <script setup lang="ts">
   import SidebarToggle from './header/SidebarToggle.vue'
+  import DocumentTitle from './header/DocumentTitle.vue'
 </script>
 
 <template>
@@ -11,6 +12,7 @@
             <img src="../assets/icons/marknote-logo.svg" alt="" class="brand__logo" />
             <img src="../assets/icons/marknote.svg" alt="MarkNote" class="brand__name" />
           </div>
+          <DocumentTitle />
         </div>
         <div class="container__right">
 
@@ -45,7 +47,7 @@
             width: 88px;
           }
           &__name {
-            width: 248px;
+            width: 200px;
           }
         }
       }
