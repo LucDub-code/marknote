@@ -1,13 +1,13 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="document">
+  <li class="document">
     <img src="../../assets/icons/file-icon.svg" alt="" class="document__icon" />
     <div class="document__text">
       <span class="document__date text-preset-9">9 juin 2026</span>
-      <span class="document__name text-preset-6">welcome.md</span>
+      <button type="button" class="document__name text-preset-6">welcome.md</button>
     </div>
-  </div>
+  </li>
 </template>
 
 <style scoped lang="scss">

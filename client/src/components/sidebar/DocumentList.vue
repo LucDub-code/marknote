@@ -3,11 +3,11 @@
 </script>
 
 <template>
-  <div class="list">
+  <ul class="list">
     <DocumentListItem />
     <DocumentListItem />
     <DocumentListItem />
-  </div>
+  </ul>
 </template>
 
 <style scoped lang="scss">

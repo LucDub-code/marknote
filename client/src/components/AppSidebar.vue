@@ -8,7 +8,7 @@
 </script>
 
 <template>
-  <div class="sidebar" :class="{ 'is-open': sidebar.isOpen }">
+  <aside class="sidebar" :class="{ 'is-open': sidebar.isOpen }">
     <div class="sidebar__inner">
       <div class="sidebar__top">
         <h1 class="sidebar__title text-preset-6">Mes documents</h1>
@@ -17,7 +17,7 @@
       </div>
       <ThemeToggle />
     </div>
-  </div>
+  </aside>
 </template>
 
 <style scoped lang="scss">

@@ -1,6 +1,7 @@
 <script setup lang="ts">
   import AppHeader from './components/AppHeader.vue'
   import AppSidebar from './components/AppSidebar.vue'
+  import AppEditor from './components/AppEditor.vue'
 </script>
 
 <template>
@@ -8,9 +9,7 @@
     <AppSidebar />
     <div class="app__main">
       <AppHeader />
-      <main>
-
-      </main>
+      <AppEditor />
     </div>
   </div>
 </template>

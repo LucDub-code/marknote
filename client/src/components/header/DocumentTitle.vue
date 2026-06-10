@@ -13,8 +13,9 @@
   <div class="document">
     <img src="../../assets/icons/file-icon.svg" alt="" class="document__icon" />
     <div class="document__text">
-      <span class="document__label text-preset-9">Document Name</span>
+      <label for="document-name" class="document__label text-preset-9">Document Name</label>
       <input
+        id="document-name"
         v-model="name"
         class="document__name text-preset-6"
         type="text"
