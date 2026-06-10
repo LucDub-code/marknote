@@ -32,8 +32,12 @@
     }
 
     &__name {
+      background: none;
+      border: none;
+      padding: 0;
       color: var(--neutral-0);
       cursor: pointer;
+
       &:hover {
         color: var(--orange-600);
       }

@@ -1,13 +1,18 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+  import MarkdownEditor from './editor/MarkdownEditor.vue'
+  import MarkdownPreview from './editor/MarkdownPreview.vue'
+</script>
 
 <template>
-  <main class="editor">
-
+  <main class="main">
+    <MarkdownEditor />
+    <MarkdownPreview />
   </main>
 </template>
 
 <style scoped lang="scss">
-  .editor {
+  .main {
+    position: relative;
     width: 100%;
     height: 100%;
     display: grid;
