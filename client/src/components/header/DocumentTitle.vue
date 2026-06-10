@@ -1,7 +1,12 @@
 <script setup lang="ts">
   import { ref } from 'vue'
+  import { formatFileName } from '@/utils/formatFileName'
 
   const name = ref('welcome.md')
+
+  const handleBlur = () => {
+    name.value = formatFileName(name.value)
+  }
 </script>
 
 <template>
@@ -13,6 +18,7 @@
         v-model="name"
         class="document__name text-preset-6"
         type="text"
+        @blur="handleBlur"
       />
     </div>
   </div>
