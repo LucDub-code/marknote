@@ -1,11 +1,19 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+  import { ref } from 'vue'
+
+  const name = ref('welcome.md')
+</script>
 
 <template>
   <div class="document">
     <img src="../../assets/icons/file-icon.svg" alt="" class="document__icon" />
     <div class="document__text">
       <span class="document__label text-preset-9">Document Name</span>
-      <span class="document__name text-preset-6">welcome.md</span>
+      <input
+        v-model="name"
+        class="document__name text-preset-6"
+        type="text"
+      />
     </div>
   </div>
 </template>
@@ -29,7 +37,18 @@
       color: var(--slate-400)
     }
     &__name {
-      color: var(--neutral-0)
+      color: var(--neutral-0);
+      background: none;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 4px 0;
+      border-bottom: 2px solid transparent;
+
+      &:focus {
+        border-bottom-color: var(--neutral-0);
+        cursor: text;
+      }
     }
   }
 </style>
