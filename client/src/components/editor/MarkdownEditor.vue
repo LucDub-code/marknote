@@ -1,13 +1,15 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+  import { useEditorStore } from '@/stores/editor'
+
+  const editor = useEditorStore()
+</script>
 
 <template>
   <section class="editor">
     <div class="editor__header">
       <h2 class="editor__title text-preset-8">Markdown</h2>
     </div>
-    <div class="editor__content">
-      
-    </div>
+    <textarea v-model="editor.content" class="editor__content text-preset-8-mono" spellcheck="false"></textarea>
   </section>
 </template>
 
@@ -29,10 +31,17 @@
     }
 
     &__content {
+      width: 100%;
       flex: 1;
       min-height: 0;
       overflow-y: auto;
       padding: 12px 16px;
+      resize: none;
+      border: none;
+      outline: none;
+      background: none;
+      color: inherit;
+      font: inherit;
     }
   }
 </style>

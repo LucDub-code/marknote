@@ -2,8 +2,12 @@
   import { useEditorStore } from '@/stores/editor'
   import OpenEyeIcon from '../ui/OpenEyeIcon.vue'
   import ClosedEyeIcon from '../ui/ClosedEyeIcon.vue'
+  import { computed } from 'vue'
+  import { marked } from 'marked'
 
   const editor = useEditorStore()
+
+  const renderedHtml = computed(() => marked.parse(editor.content))
 </script>
 
 <template>
@@ -15,6 +19,7 @@
         <ClosedEyeIcon v-else />
       </button>
     </div>
+    <div class="preview__content" v-html="renderedHtml"></div>
   </section>
 </template>
 
@@ -68,7 +73,7 @@
       flex: 1;
       min-height: 0;
       overflow-y: auto;
-      padding: 12px 16px;
+      padding: 24px 20px;
     }
   }
 </style>
