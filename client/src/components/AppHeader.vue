@@ -4,6 +4,7 @@
   import DocumentTitle from './header/DocumentTitle.vue'
   import DeleteButton from './header/DeleteButton.vue'
   import SaveButton from './header/SaveButton.vue'
+  import AuthButton from './header/AuthButton.vue'
 
   const sidebar = useSidebarStore()
 </script>
@@ -22,6 +23,7 @@
       <div class="container__right" v-if="!sidebar.isOpen">
         <DeleteButton />
         <SaveButton />
+        <AuthButton />
       </div>
     </div>
   </header>

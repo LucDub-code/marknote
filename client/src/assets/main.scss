@@ -21,6 +21,8 @@ $slate-400: #7C8187;
 $slate-300: #C1C4CB;
 $orange-600: #E46643;
 $orange-400: #F39765;
+$green-600: #23967F;
+$green-400: #2EC2A4;
 
 :root {
   --neutral-950: #{$neutral-950};
@@ -38,6 +40,8 @@ $orange-400: #F39765;
   --orange-400: #{$orange-400};
   --btn-bg: #{$orange-600};
   --btn-hover: #{$orange-400};
+  --green-600: #{$green-600};
+  --green-400: #{$green-400};
 
   --font-sans: 'Roboto', sans-serif;
   --font-slab: 'Roboto Slab', serif;
@@ -66,15 +70,46 @@ body {
   background: var(--bg);
 }
 
-.text-preset-1 { @include t.preset-1; }
-.text-preset-2 { @include t.preset-2; }
-.text-preset-3 { @include t.preset-3; }
-.text-preset-4 { @include t.preset-4; }
-.text-preset-5 { @include t.preset-5; }
-.text-preset-6 { @include t.preset-6; }
-.text-preset-7 { @include t.preset-7; }
-.text-preset-7-regular { @include t.preset-7-regular; }
-.text-preset-8 { @include t.preset-8; }
-.text-preset-8-mono { @include t.preset-8-mono; }
-.text-preset-9 { @include t.preset-9; }
+.text-preset-1 {
+  @include t.preset-1;
+}
 
+.text-preset-2 {
+  @include t.preset-2;
+}
+
+.text-preset-3 {
+  @include t.preset-3;
+}
+
+.text-preset-4 {
+  @include t.preset-4;
+}
+
+.text-preset-5 {
+  @include t.preset-5;
+}
+
+.text-preset-6 {
+  @include t.preset-6;
+}
+
+.text-preset-7 {
+  @include t.preset-7;
+}
+
+.text-preset-7-regular {
+  @include t.preset-7-regular;
+}
+
+.text-preset-8 {
+  @include t.preset-8;
+}
+
+.text-preset-8-mono {
+  @include t.preset-8-mono;
+}
+
+.text-preset-9 {
+  @include t.preset-9;
+}
