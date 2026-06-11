@@ -1,7 +1,11 @@
 <script setup lang="ts">
+  import { useModalStore } from '@/stores/modal'
   import AppHeader from './components/AppHeader.vue'
   import AppSidebar from './components/AppSidebar.vue'
   import AppEditor from './components/AppEditor.vue'
+  import BaseOverlay from './components/ui/BaseOverlay.vue'
+
+  const modal = useModalStore()
 </script>
 
 <template>
@@ -12,6 +16,7 @@
       <AppEditor />
     </div>
   </div>
+  <BaseOverlay v-if="modal.isDeleteOpen" @click="modal.close" />
 </template>
 
 <style lang="scss" scoped>

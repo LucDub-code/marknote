@@ -1,9 +1,12 @@
 <script setup lang="ts">
+  import { useModalStore } from '@/stores/modal'
   import TrashIcon from '../ui/TrashIcon.vue'
+
+  const modal = useModalStore()
 </script>
 
 <template>
-  <button type="button" class="delete-button">
+  <button type="button" class="delete-button" @click="modal.openDelete">
     <TrashIcon />
   </button>
 </template>

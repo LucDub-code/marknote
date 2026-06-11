@@ -15,6 +15,7 @@
 
 <style scoped lang="scss">
   .editor {
+    background: var(--bg);
     display: flex;
     flex-direction: column;
     height: 100%;

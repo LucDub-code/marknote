@@ -26,6 +26,7 @@
 
 <style scoped lang="scss">
   .preview {
+    background: var(--bg);
     position: absolute;
     top: 0;
     bottom: 0;
