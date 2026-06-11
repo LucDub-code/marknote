@@ -47,6 +47,9 @@ $orange-400: #F39765;
   --editor-header: #{$slate-950};
   --editor-header-text: #{$slate-300};
   --text-markdown: #{$slate-300};
+  --modal-bg: #{$slate-950};
+  --modal-title: #{$neutral-0};
+  --modal-text: #{$slate-300};
 }
 
 [data-theme='light'] {
@@ -54,6 +57,9 @@ $orange-400: #F39765;
   --editor-header: #{$neutral-100};
   --editor-header-text: #{$slate-400};
   --text-markdown: #{$slate-700};
+  --modal-bg: #{$neutral-0};
+  --modal-title: #{$slate-700};
+  --modal-text: #{$slate-400};
 }
 
 body {

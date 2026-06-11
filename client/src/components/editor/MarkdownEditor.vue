@@ -1,7 +1,7 @@
 <script setup lang="ts">
-  import { useEditorStore } from '@/stores/editor'
+  import { useDocumentStore } from '@/stores/document'
 
-  const editor = useEditorStore()
+  const document = useDocumentStore()
 </script>
 
 <template>
@@ -9,7 +9,7 @@
     <div class="editor__header">
       <h2 class="editor__title text-preset-8">Markdown</h2>
     </div>
-    <textarea v-model="editor.content" class="editor__content text-preset-8-mono" spellcheck="false"></textarea>
+    <textarea v-model="document.content" class="editor__content text-preset-8-mono" spellcheck="false"></textarea>
   </section>
 </template>
 
@@ -42,7 +42,6 @@
       border: none;
       outline: none;
       background: none;
-      color: inherit;
       font: inherit;
       color: var(--text-markdown);
     }

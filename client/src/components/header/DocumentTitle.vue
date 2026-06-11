@@ -1,12 +1,7 @@
 <script setup lang="ts">
-  import { ref } from 'vue'
-  import { formatFileName } from '@/utils/formatFileName'
+  import { useDocumentStore } from '@/stores/document'
 
-  const name = ref('welcome.md')
-
-  const handleBlur = () => {
-    name.value = formatFileName(name.value)
-  }
+  const document = useDocumentStore()
 </script>
 
 <template>
@@ -16,10 +11,10 @@
       <label for="document-name" class="document__label text-preset-9">Document Name</label>
       <input
         id="document-name"
-        v-model="name"
+        v-model="document.name"
         class="document__name text-preset-6"
         type="text"
-        @blur="handleBlur"
+        @blur="document.formatName"
       />
     </div>
   </div>

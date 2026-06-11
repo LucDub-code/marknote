@@ -4,6 +4,7 @@
   import AppSidebar from './components/AppSidebar.vue'
   import AppEditor from './components/AppEditor.vue'
   import BaseOverlay from './components/ui/BaseOverlay.vue'
+  import DeleteDocumentModal from './components/modals/DeleteDocumentModal.vue'
 
   const modal = useModalStore()
 </script>
@@ -16,7 +17,9 @@
       <AppEditor />
     </div>
   </div>
-  <BaseOverlay v-if="modal.isDeleteOpen" @click="modal.close" />
+  <BaseOverlay v-if="modal.isDeleteOpen" @click="modal.close">
+    <DeleteDocumentModal />
+  </BaseOverlay>
 </template>
 
 <style lang="scss" scoped>

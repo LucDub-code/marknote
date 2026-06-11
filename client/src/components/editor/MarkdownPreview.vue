@@ -1,5 +1,6 @@
 <script setup lang="ts">
   import { useEditorStore } from '@/stores/editor'
+  import { useDocumentStore } from '@/stores/document'
   import OpenEyeIcon from '../ui/OpenEyeIcon.vue'
   import ClosedEyeIcon from '../ui/ClosedEyeIcon.vue'
   import { computed } from 'vue'
@@ -7,8 +8,9 @@
   import '@/assets/preview.scss'
 
   const editor = useEditorStore()
+  const document = useDocumentStore()
 
-  const renderedHtml = computed(() => marked.parse(editor.content))
+  const renderedHtml = computed(() => marked.parse(document.content))
 </script>
 
 <template>
