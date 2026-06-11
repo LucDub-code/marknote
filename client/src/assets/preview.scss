@@ -1,5 +1,69 @@
 @use './typography' as t;
 
-.markdown {
+:root {
+  --h1: var(--neutral-0);
+  --h2: var(--neutral-0);
+  --h3: var(--neutral-0);
+  --h4: var(--neutral-0);
+  --h5: var(--neutral-0);
+  --h6: var(--orange-600);
+  --p: var(--slate-300);
+  --li: var(--slate-300);
+  --a : var(--orange-600);
+  --bg-pre: var(--slate-800);
+  --code: var(--neutral-0);
+  --bg-blockquote: var(--slate-800);
+  --blockquote: var(--neutral-0);
+}
 
+[data-theme='light'] {
+  --h1: var(--slate-700);
+  --h2: var(--slate-700);
+  --h3: var(--slate-700);
+  --h4: var(--slate-700);
+  --h5: var(--slate-700);
+  --h6: var(--orange-600);
+  --p: var(--slate-400);
+  --li: var(--slate-400);
+  --a : var(--orange-600);
+  --bg-pre: var(--neutral-100);
+  --code: var(--slate-700);
+  --bg-blockquote: var(--neutral-100);
+  --blockquote: var(--slate-700);
+}
+
+.markdown {
+  h1 { @include t.preset-1; margin-bottom: 20px; color: var(--h1); }
+  h2 { @include t.preset-2; margin-bottom: 20px; color: var(--h2); }
+  h3 { @include t.preset-3; margin-bottom: 20px; color: var(--h3); }
+  h4 { @include t.preset-4; margin-bottom: 20px; color: var(--h4); }
+  h5 { @include t.preset-5; margin-bottom: 20px; color: var(--h5); }
+  h6 { @include t.preset-7; margin-bottom: 20px; color: var(--h6); }
+  p { @include t.preset-7-regular; margin-bottom: 20px; color: var(--p); }
+  li { @include t.preset-7-regular; color: var(--li); margin-left: 36px; }
+  a { color: var(--a); text-decoration: none; &:hover { text-decoration: underline; } }
+  ul { margin-bottom: 20px; }
+  ol { margin-bottom: 20px; }
+  pre { background: var(--bg-pre); border-radius: 4px; padding: 24px; margin-bottom: 20px; }
+  code { @include t.preset-8-mono; color: var(--code); }
+  blockquote { 
+    @include t.preset-7; 
+    background: var(--bg-blockquote); 
+    border-left: 4px solid var(--orange-600); 
+    border-radius: 4px; padding-inline: 20px; 
+    padding-top: 24px; 
+    padding-bottom: 4px; 
+    margin-bottom: 20px; 
+    p {
+      color: var(--blockquote);
+    }
+    a {
+      color: var(--a);
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 }
