@@ -23,6 +23,7 @@
     &__header {
       height: 40px;
       background: var(--editor-header);
+      color: var(--editor-header-text);
       padding: 12px 16px;
     }
 
@@ -42,6 +43,7 @@
       background: none;
       color: inherit;
       font: inherit;
+      color: var(--text-markdown);
     }
   }
 </style>

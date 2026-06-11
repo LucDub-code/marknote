@@ -6,15 +6,18 @@
 
 <template>
   <div class="toggle__container">
-    <button class="toggle__button" @click="theme.set('dark')">
-      <img src="../../assets/icons/moon-icon.svg" alt="Thème sombre" />
+    <img class="toggle__icon" src="../../assets/icons/moon-icon.svg" alt="" aria-hidden="true" />
+    <button
+      type="button"
+      class="toggle__slider"
+      role="switch"
+      :aria-checked="theme.theme === 'light'"
+      aria-label="Changer de thème"
+      @click="theme.set(theme.theme === 'light' ? 'dark' : 'light')"
+    >
+      <span class="toggle__circle" :class="{ 'is-light': theme.theme === 'light' }" />
     </button>
-    <div class="toggle__slider">
-      <div class="toggle__circle" :class="{ 'is-light': theme.theme === 'light' }" />
-    </div>
-    <button class="toggle__button" @click="theme.set('light')">
-      <img src="../../assets/icons/sun-icon.svg" alt="Thème clair" />
-    </button>
+    <img class="toggle__icon" src="../../assets/icons/sun-icon.svg" alt="" aria-hidden="true" />
   </div>
 </template>
 
@@ -27,22 +30,18 @@
       gap: 10px;
     }
 
-    &__button {
-      cursor: pointer;
-      background: none;
-      border: none;
-      padding: 0;
-    }
-
     &__slider {
       width: 48px;
       height: 24px;
       border-radius: 16px;
       background: var(--slate-500);
       padding: 6px;
+      border: none;
+      cursor: pointer;
     }
 
     &__circle {
+      display: block;
       width: 12px;
       height: 12px;
       border-radius: 50%;

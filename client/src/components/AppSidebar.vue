@@ -23,6 +23,7 @@
 <style scoped lang="scss">
   .sidebar {
     width: 0;
+    height: 100%;
     overflow: hidden;
     transition: width 0.2s ease;
     background: var(--slate-950);

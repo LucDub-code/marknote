@@ -4,6 +4,7 @@
   import ClosedEyeIcon from '../ui/ClosedEyeIcon.vue'
   import { computed } from 'vue'
   import { marked } from 'marked'
+  import '@/assets/preview.scss'
 
   const editor = useEditorStore()
 
@@ -19,7 +20,7 @@
         <ClosedEyeIcon v-else />
       </button>
     </div>
-    <div class="preview__content" v-html="renderedHtml"></div>
+    <div class="preview__content markdown" v-html="renderedHtml"></div>
   </section>
 </template>
 
@@ -44,6 +45,7 @@
     &__header {
       height: 40px;
       background: var(--editor-header);
+      color: var(--editor-header-text);
       padding: 12px 16px;
       display: flex;
       align-items: center;
