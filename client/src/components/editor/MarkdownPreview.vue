@@ -22,7 +22,9 @@
         <ClosedEyeIcon v-else />
       </button>
     </div>
-    <div class="preview__content markdown" v-html="renderedHtml"></div>
+    <div class="preview__content">
+      <div class="preview__inner markdown" v-html="renderedHtml"></div>
+    </div>
   </section>
 </template>
 
@@ -79,6 +81,11 @@
       min-height: 0;
       overflow-y: auto;
       padding: 24px 20px;
+    }
+
+    &__inner {
+      max-width: 720px;
+      margin: 0 auto;
     }
   }
 </style>
