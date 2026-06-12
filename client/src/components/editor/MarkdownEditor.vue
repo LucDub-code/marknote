@@ -62,7 +62,7 @@
       cursor: pointer;
       color: var(--neutral-0);
 
-      @media (max-width: 425px) {
+      @media (max-width: 768px) {
         display: flex;
       }
 

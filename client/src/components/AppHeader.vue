@@ -37,7 +37,7 @@
     display: flex;
     align-items: center;
 
-    @media (max-width: 425px) {
+    @media (max-width: 768px) {
       height: 56px;
     }
 
@@ -48,7 +48,7 @@
       padding: 16px 24px;
       flex: 1;
 
-      @media (max-width: 425px) {
+      @media (max-width: 768px) {
         padding: 8px 16px;
       }
 
@@ -63,7 +63,7 @@
           padding-right: 24px;
           border-right: 4px solid var(--slate-500);
 
-          @media (max-width: 425px) {
+          @media (max-width: 768px) {
               display: none;
             }
 
@@ -74,7 +74,7 @@
           &__name {
             width: 144px;
 
-            @media (max-width: 768px) {
+            @media (max-width: 850px) {
               display: none;
             }
           }

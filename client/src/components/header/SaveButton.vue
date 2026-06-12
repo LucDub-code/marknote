@@ -13,14 +13,14 @@
   .save-button {
     padding: 10px 16px;
 
-    @media (max-width: 425px) {
+    @media (max-width: 768px) {
       padding: 10px;
     }
 
     &__text {
       margin-left: 8px;
 
-      @media (max-width: 425px) {
+      @media (max-width: 768px) {
         display: none;
       }
     }

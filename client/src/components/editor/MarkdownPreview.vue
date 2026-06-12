@@ -43,7 +43,7 @@
     border-left: 1px solid var(--slate-500);
     transition: left 0.2s ease;
 
-    @media (max-width: 425px) {
+    @media (max-width: 768px) {
       left: 0;
 
       &:not(.is-expanded) {

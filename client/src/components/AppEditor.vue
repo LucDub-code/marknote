@@ -18,7 +18,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-    @media (max-width: 425px) {
+    @media (max-width: 768px) {
       grid-template-columns: 1fr;
     }
   }

@@ -22,7 +22,7 @@
     align-items: center;
     gap: 16px;
 
-    @media (max-width: 425px) {
+    @media (max-width: 768px) {
       padding-left: 0px;
     }
 
@@ -40,12 +40,14 @@
     &__label {
       color: var(--slate-400);
 
-      @media (max-width: 425px) {
+      @media (max-width: 768px) {
         display: none;
       }
     }
 
     &__name {
+      width: 100%;
+      min-width: 0;
       color: var(--neutral-0);
       background: none;
       border: none;

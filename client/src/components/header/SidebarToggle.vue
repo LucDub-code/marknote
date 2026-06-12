@@ -34,7 +34,7 @@
       background: var(--orange-600);
     }
 
-    @media (max-width: 425px) {
+    @media (max-width: 768px) {
       width: 56px;
     }
   }
