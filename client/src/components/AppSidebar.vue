@@ -23,6 +23,7 @@
 <style scoped lang="scss">
   .sidebar {
     width: 0;
+    flex-shrink: 0;
     height: 100%;
     overflow: hidden;
     transition: width 0.2s ease;
@@ -33,7 +34,7 @@
     }
 
     &__inner {
-      width: 250px; // largeur fixe = largeur ouverte
+      width: 250px;
       height: 100%;
       padding: 24px;
       box-sizing: border-box;

@@ -28,9 +28,10 @@
   .app {
     display: flex;
     height: 100vh;
+    overflow: hidden;
 
     &__main {
-      flex: 1;
+      flex: 0 0 100%;
     }
   }
 </style>
