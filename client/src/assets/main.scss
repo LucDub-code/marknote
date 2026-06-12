@@ -70,46 +70,29 @@ body {
   background: var(--bg);
 }
 
-.text-preset-1 {
-  @include t.preset-1;
+.input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid var(--slate-500);
+  background: transparent;
+  color: var(--text-markdown);
+
+  &:focus {
+    outline: none;
+    border-color: var(--orange-600);
+  }
 }
 
-.text-preset-2 {
-  @include t.preset-2;
-}
+.text-preset-1 { @include t.preset-1; }
+.text-preset-2 { @include t.preset-2; }
+.text-preset-3 { @include t.preset-3; }
+.text-preset-4 { @include t.preset-4; }
+.text-preset-5 { @include t.preset-5; }
+.text-preset-6 { @include t.preset-6; }
+.text-preset-7 { @include t.preset-7; }
+.text-preset-7-regular { @include t.preset-7-regular; }
+.text-preset-8 { @include t.preset-8; }
+.text-preset-8-mono { @include t.preset-8-mono; }
+.text-preset-9 { @include t.preset-9; }
 
-.text-preset-3 {
-  @include t.preset-3;
-}
-
-.text-preset-4 {
-  @include t.preset-4;
-}
-
-.text-preset-5 {
-  @include t.preset-5;
-}
-
-.text-preset-6 {
-  @include t.preset-6;
-}
-
-.text-preset-7 {
-  @include t.preset-7;
-}
-
-.text-preset-7-regular {
-  @include t.preset-7-regular;
-}
-
-.text-preset-8 {
-  @include t.preset-8;
-}
-
-.text-preset-8-mono {
-  @include t.preset-8-mono;
-}
-
-.text-preset-9 {
-  @include t.preset-9;
-}

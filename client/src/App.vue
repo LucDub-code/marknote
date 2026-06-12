@@ -5,6 +5,7 @@
   import AppEditor from './components/AppEditor.vue'
   import BaseOverlay from './components/ui/BaseOverlay.vue'
   import DeleteDocumentModal from './components/modals/DeleteDocumentModal.vue'
+  import AuthModal from './components/modals/AuthModal.vue'
 
   const modal = useModalStore()
 </script>
@@ -17,8 +18,9 @@
       <AppEditor />
     </div>
   </div>
-  <BaseOverlay v-if="modal.isDeleteOpen" @click="modal.close">
-    <DeleteDocumentModal />
+  <BaseOverlay v-if="modal.active" @click.self="modal.close">
+    <DeleteDocumentModal v-if="modal.active === 'delete'" />
+    <AuthModal v-else-if="modal.active === 'auth'" />
   </BaseOverlay>
 </template>
 

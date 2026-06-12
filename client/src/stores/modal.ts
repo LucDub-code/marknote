@@ -1,12 +1,14 @@
 import { defineStore } from 'pinia'
 import { ref } from 'vue'
 
+type ModalType = 'delete' | 'auth' | null
+
 export const useModalStore = defineStore('modal', () => {
-  
-  const isDeleteOpen = ref(false)
+  const active = ref<ModalType>(null)
 
-  const openDelete = () => { isDeleteOpen.value = true }
-  const close = () => { isDeleteOpen.value = false }
+  const openDelete = () => { active.value = 'delete' }
+  const openAuth = () => { active.value = 'auth' }
+  const close = () => { active.value = null }
 
-  return { isDeleteOpen, openDelete, close }
+  return { active, openDelete, openAuth, close }
 })
