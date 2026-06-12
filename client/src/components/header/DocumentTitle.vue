@@ -8,14 +8,9 @@
   <div class="document">
     <img src="../../assets/icons/file-icon.svg" alt="" class="document__icon" />
     <div class="document__text">
-      <label for="document-name" class="document__label text-preset-9">Document Name</label>
-      <input
-        id="document-name"
-        v-model="document.name"
-        class="document__name text-preset-6"
-        type="text"
-        @blur="document.formatName"
-      />
+      <label for="document-name" class="document__label text-preset-9">Nom du document</label>
+      <input id="document-name" v-model="document.name" class="document__name text-preset-6" type="text"
+        @blur="document.formatName" />
     </div>
   </div>
 </template>
@@ -26,25 +21,37 @@
     display: flex;
     align-items: center;
     gap: 16px;
+
+    @media (max-width: 425px) {
+      padding-left: 0px;
+    }
+
     &__icon {
       width: 16px;
     }
+
     &__text {
       display: flex;
       flex-direction: column;
       gap: 4px;
       justify-content: flex-start;
     }
+
     &__label {
-      color: var(--slate-400)
+      color: var(--slate-400);
+
+      @media (max-width: 425px) {
+        display: none;
+      }
     }
+
     &__name {
       color: var(--neutral-0);
       background: none;
       border: none;
       outline: none;
       cursor: pointer;
-      padding: 4px 0;
+      padding: 2px 0;
       border-bottom: 2px solid transparent;
 
       &:focus {

@@ -37,12 +37,20 @@
     display: flex;
     align-items: center;
 
+    @media (max-width: 425px) {
+      height: 56px;
+    }
+
     .container {
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding: 16px 24px;
       flex: 1;
+
+      @media (max-width: 425px) {
+        padding: 8px 16px;
+      }
 
       &__left {
         display: flex;
@@ -55,12 +63,20 @@
           padding-right: 24px;
           border-right: 4px solid var(--slate-500);
 
+          @media (max-width: 425px) {
+              display: none;
+            }
+
           &__logo {
             width: 64px;
           }
 
           &__name {
             width: 144px;
+
+            @media (max-width: 768px) {
+              display: none;
+            }
           }
         }
       }

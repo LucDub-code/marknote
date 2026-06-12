@@ -29,8 +29,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     &:hover {
       background: var(--orange-600);
+    }
+
+    @media (max-width: 425px) {
+      width: 56px;
     }
   }
 </style>
